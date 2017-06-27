@@ -17,6 +17,7 @@
 ### 去除重复的行，进行统计，如下：
 
 需要提取第3列中字段。其格式[gid:sid:rev]
+
 awk '{print $3}' fast.log.bk > fast.log.sidgroup
 
 awk -F":" '{print $2}' fast.log.sidgroup  > fast.log.sid
